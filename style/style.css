@@ -7,36 +7,39 @@
 ▪ 1280 px та більше – PC.
 */
 body{
-    margin: 15px;
+    margin: 0;
+    font-family: Arial;
 }
 
 .container{
     max-width: 1280px;
-    border: 1px solid blue;
-    margin: 0 auto;
-    height: 1700px;
+    /*border: 1px solid blue;*/
+    margin: auto;
+    height: 1794px;
     display: flex;
 }
 
 header{
-    margin: 15px;
-    width: 35%;
+    /*margin: 15px;*/
+    width: 32%;
     /* height: 100%; */
-    border: 1px solid gray
+    /*border: 1px solid gray*/
 }
 
 main{
     margin: 30px 70px;
-    width: 60%;
+    width: 68%;
+    text-align: justify;
     /* height: 100%; */
-    border: 1px solid gray
+    /*border: 1px solid gray*/
 }
 
 .user-photo{
-    width: 100%;
+    width: 58%;
     max-width: 430px;
     /* height: 25.618%; */
-    border: 1px solid red;
+    margin: 90px auto 40px auto;
+    /*border: 1px solid red;*/
 }
 
 .user-photo>img{
@@ -44,20 +47,28 @@ main{
     max-width: 430px;
     /* height: 100%; */
 }
-
-.main-title{
+.header-title{
     text-align: center;
+    font-size: 37px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.header-title>span{
+    font-weight: 800;
 }
 
 .main-discription{
     text-align: center;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
-
 
 .header-section{
     /* min-height: 66%; */
-    height: 66%;
-    border: 1px solid red;
+    height: 69%;
+    /*border: 1px solid red;*/
     /* background-image: url("images/background_img288x.png");
     background-size: 100% 100%;
     background-position: center;
@@ -68,12 +79,10 @@ main{
     justify-content: space-around;    
 }
 
-
-
 article{
 /* height: 24%; */
 /* padding: 0 0 0 20px; */
-border: 1px solid rgb(0, 204, 255);
+/*border: 1px solid rgb(0, 204, 255);*/
 display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -83,19 +92,61 @@ align-items: flex-start;
     width: 70%;
     display: flex;
     align-items: center;
-    background-color: lightgray;
-    margin: auto;
+    /*background-color: lightgray;*/
+    margin: 5px auto 5px auto;
+}
+.img-contact{
+    width: 27px;
+    margin: 4px 15px auto 5px;
 }
 
-.img-logo-in-header{
-    width: 30px;
-   margin: 0 20px 0 0;
+.address-logo{
+    width: 22px;
 }
-/* .row-article>img{
-    width: 30px;
-   margin: 0 20px 0 0;
-} */
 
+.phone-logo{
+    width: 23px;
+
+}
+
+.img-follow-me{
+    width: 34px;
+    margin: 4px 15px auto 5px;
+}
+
+.row-name-language{
+
+}
+.img-point-language{
+    width: 12px;
+    /*margin: 0 4px 0 0;*/
+    /*margin-left: auto;*/
+}
+
+.name-language{
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 7px auto 7px 4px;
+    justify-content: space-between;
+}
+
+.row-point{
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    /*margin: auto 4px auto auto;*/
+    margin-left: auto;
+    /*background: blue;*/
+}
+
+.container-hobbies{
+flex-flow: wrap;
+}
+
+.container-hobbies>span{
+    width: 40%;
+    margin: 15px 4px 15px 4px;
+}
 
 a{
     text-decoration: none;
@@ -106,38 +157,46 @@ address{
     font-style:unset;
 }
 
+.block-title-article{
+    background: rgb(64, 64, 66);
+}
+
 .title-article{
     width: 99%;
+    color: white;
+
     text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
+    letter-spacing: 3px;
 }
 
 .main-title-article{
     width: 100%;
+
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 20px;
     border-bottom: 4px solid rgba(0, 0, 0, 0.692);
-    padding: 14px 0 12px 0;
+    padding: 10px 0 8px 0;
     margin: 0;
 }
 
 .img-logo-in-main{
-    width: 70px;
+    width: 48px;
     margin: 0 35px 0 0;
 }
 
 .main-section{
     height: 100%;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     /* padding: 15px; */
     /* background-image: url("images/background_img288x.png");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat; */
-    background-color:rgb(233, 196, 224);
+    /*background-color:rgb(233, 196, 224);*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;    
@@ -148,7 +207,7 @@ address{
     display: flex;
     /* justify-content: space-between; */
     /* align-items: center; */
-    background-color: lightgray;
+    /*background-color: lightgray;*/
     margin: 0 0 10px 0;
 }
 
@@ -161,10 +220,14 @@ address{
 .place-of-education p:first-child{
     font-weight: bold;
     margin: auto 20px auto 0;
-    font-size: 20px ;
+    font-size: 16px ;
 }
 
 .place-of-education p:last-child{
    min-width: 230px;
+   font-size: 13px ;
+    text-align: right;
 }
+
+
 
